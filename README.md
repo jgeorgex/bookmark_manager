@@ -7,6 +7,11 @@ As a user
 So I can visit my favourite web sites easily
 I would like a list of my favourite bookmarks
 
+### User Story 2
+As a user
+So I can save my favourite websites
+I would like to add new bookmarks 
+
 
 ## SETUP DATABASE
 1. Connect to psql
