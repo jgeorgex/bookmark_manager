@@ -9,11 +9,11 @@ end
 
 feature 'Viewing bookmarks' do
   scenario 'A user can see bookmarks' do
-    connection = PG.connect(dbname: 'bm_manager_test')
+    connection = PG.connect(dbname:'bm_manager_test')
 
-    connection.exec("INSERT INTO bookmarks VALUES(7, 'http://www.makersacademy.com');")
-    connection.exec("INSERT INTO bookmarks VALUES(8, 'http://www.destroyallsoftware.com');")
-    connection.exec("INSERT INTO bookmarks VALUES(9, 'http://www.google.com');")
+    connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.makersacademy.com');")
+    connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.destroyallsoftware.com');")
+    connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.google.com');")
 
     visit('/bookmarks')
 
